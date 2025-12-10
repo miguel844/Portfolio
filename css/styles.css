@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #1f1f1f;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+.perfil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.btn {
+    background: #1f1f1f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-outline {
+    border: 2px solid #1f1f1f;
+    padding: 8px 18px;
+    color: #1f1f1f;
+    text-decoration: none;
+}
+
+.sobre-mi, .proyectos, .contacto, .pagina {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* GRID PROYECTOS */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: white;
+    margin-top: 50px;
+}
+
+/* ===== MODO OSCURO ===== */
+.dark-mode {
+    background: #121212;
+    color: #e4e4e4;
+}
+
+.dark-mode .header {
+    background: #000;
+}
+
+.dark-mode .footer {
+    background: #000;
+}
+
+.dark-mode .card {
+    background: #1e1e1e;
+}
+
+.dark-mode .btn {
+    background: #e4e4e4;
+    color: #000;
+}
+
+.dark-mode .btn-outline {
+    color: #e4e4e4;
+    border-color: #e4e4e4;
+}
+
+/* Botón modo oscuro */
+.modo-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 15px;
+}
