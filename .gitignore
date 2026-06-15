@@ -2,7 +2,7 @@
 node_modules/
 
 # Archivos generados por Tailwind
-public/assets/css/output.css
+# public/assets/css/output.css
 
 # Build / dist (por si lo usas en el futuro)
 dist/
