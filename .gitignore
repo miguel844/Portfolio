@@ -1,0 +1,30 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos generados por Tailwind
+public/assets/css/output.css
+
+# Build / dist (por si lo usas en el futuro)
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno (si en el futuro usas APIs)
+.env
+
+# Cachés de herramientas
+.cache/
+.parcel-cache/
+.vite/
+
+# IDEs (opcional pero recomendable)
+.vscode/
+.idea/
