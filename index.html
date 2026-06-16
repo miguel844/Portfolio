@@ -6,18 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Developer</title>
     <link rel="stylesheet" href="./public/assets/css/output.css">
-    <link rel="stylesheet" href="./public/assets/css/main.css">
 </head>
 
-<body class="bg-amber-400 font-mono">
-    <nav class="bg-amber-50 w-full md:w-64 md:h-screen flex flex-row md:flex-col text-center">
-        <p class="p-4">Miguel Developer</p>
-        <a class="p-4 hidden md:block" href="">Sobre mí</a>
-        <a class="p-4 hidden md:block" href="">Proyectos</a>
-        <a class="p-4 hidden md:block" href="">Skills</a>
-        <a class="p-4 hidden md:block" href="">Contacto</a>
+<body>
+<header class="bg-blue-500 shadow-md text-blue-50">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+
+    <!-- Logo -->
+    <div class="text-xl font-bold font-mono">
+      Miguel Developer
+    </div>
+
+    <!-- Menú desktop -->
+    <nav class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-blue-500">Inicio</a>
+      <a href="#" class="hover:text-blue-500">Servicios</a>
+      <a href="#" class="hover:text-blue-500">Contacto</a>
     </nav>
-    <div class="caja bg-amber-950"></div>
+
+    <!-- Botón hamburguesa -->
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1">
+      <span class="w-6 h-0.5 bg-blue-50"></span>
+      <span class="w-6 h-0.5 bg-blue-50"></span>
+      <span class="w-6 h-0.5 bg-blue-50"></span>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <nav id="mobileMenu" class="hidden flex-col md:hidden px-4 pb-4 gap-3 text-center">
+    <a href="#" class="block py-2 hover:font-bold">Inicio</a>
+    <a href="#" class="block py-2 hover:font-bold">Servicios</a>
+    <a href="#" class="block py-2 hover:font-bold">Contacto</a>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
 </body>
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./public/assets/css/output.css --watch -->
 </html>
