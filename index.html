@@ -2,48 +2,70 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Developer</title>
-    <link rel="stylesheet" href="./public/assets/css/output.css">
-    <script src="./public/assets/js/funcionalidad.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Developer</title>
+  <link rel="stylesheet" href="./public/assets/css/output.css">
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+  <script src="./public/assets/js/gsap.js" defer></script>
+  <script src="./public/assets/js/funcionalidad.js" defer></script>
 </head>
 
 <body>
-<header class="bg-blue-500 shadow-md text-blue-50">
-  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+  <header class="bg-blue-500 shadow-md text-blue-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
 
-    <!-- Logo -->
-    <div class="text-xl font-bold font-mono">
-      Miguel Developer
+      <!-- Logo -->
+      <div class="logo text-xl font-bold font-mono">
+        Miguel Developer
+      </div>
+
+      <!-- Menú desktop -->
+      <nav class="hidden md:flex gap-6">
+        <a href="#" class="menu-item hover:text-blue-300 font-bold">Inicio</a>
+        <a href="https://tailwindcss.com/" class="menu-item hover:text-blue-300 font-bold">Tailwind</a>
+        <a href="https://github.com/miguel844/" class="menu-item hover:text-blue-300 font-bold">GitHub</a>
+        <a href="#" class="menu-item hover:text-blue-300 font-bold text-amber-300">CV</a>
+      </nav>
+
+      <!-- Botón hamburguesa -->
+      <button id="menuBtn" class="md:hidden flex flex-col gap-1">
+        <span class="w-6 h-0.5 bg-blue-50"></span>
+        <span class="w-6 h-0.5 bg-blue-50"></span>
+        <span class="w-6 h-0.5 bg-blue-50"></span>
+      </button>
     </div>
 
-    <!-- Menú desktop -->
-    <nav class="hidden md:flex gap-6">
-      <a href="#" class="hover:text-blue-300 font-bold">Inicio</a>
-      <a href="https://tailwindcss.com/" class="hover:text-blue-300 font-bold">Tailwind</a>
-      <a href="https://github.com/miguel844/" class="hover:text-blue-300 font-bold">GitHub</a>
-      <a href="#" class="hover:text-blue-300 font-bold">CV</a>
+    <!-- Menú móvil -->
+    <nav id="mobileMenu" class="hidden flex-col md:hidden px-4 pb-2 gap-3 text-center">
+      <a href="#" class="block py-2 border-t font-bold">Inicio</a>
+      <a href="https://tailwindcss.com/" class="block py-2 border-t font-bold">Tailwind</a>
+      <a href="https://github.com/miguel844/" class="block py-2 border-t font-bold">GitHub</a>
+      <a href="#" class="block py-2 border-t font-bold  text-amber-300">CV</a>
     </nav>
+  </header>
 
-    <!-- Botón hamburguesa -->
-    <button id="menuBtn" class="md:hidden flex flex-col gap-1">
-      <span class="w-6 h-0.5 bg-blue-50"></span>
-      <span class="w-6 h-0.5 bg-blue-50"></span>
-      <span class="w-6 h-0.5 bg-blue-50"></span>
-    </button>
-  </div>
+  <section id="hero" class="flex justify-center mt-6">
+    <div>
+      <img src="./public/assets/img/mifoto.jpg" alt="Mi foto" class="w-48 h-48 rounded-full object-cover" />
+    </div>
+  </section>
 
-  <!-- Menú móvil -->
-  <nav id="mobileMenu" class="hidden flex-col md:hidden px-4 pb-2 gap-3 text-center">
-    <a href="#" class="block py-2 border-t font-bold">Inicio</a>
-    <a href="https://tailwindcss.com/" class="block py-2 border-t font-bold">Tailwind</a>
-    <a href="https://github.com/miguel844/" class="block py-2 border-t font-bold">GitHub</a>
-    <a href="#" class="block py-2 border-t font-bold">CV</a>
-  </nav>
-</header>
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
 <!-- npx @tailwindcss/cli -i ./src/input.css -o ./public/assets/css/output.css --watch -->
+
 </html>
