@@ -6,66 +6,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miguel Developer</title>
   <link rel="stylesheet" href="./public/assets/css/output.css">
+  <link rel="stylesheet" href="./public/assets/css/miWeb.css">
   <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
   <script src="./public/assets/js/gsap.js" defer></script>
   <script src="./public/assets/js/funcionalidad.js" defer></script>
 </head>
 
+
 <body>
-  <header class="bg-blue-500 shadow-md text-blue-50">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
 
-      <!-- Logo -->
-      <div class="logo text-xl font-bold font-mono">
-        Miguel Developer
-      </div>
-
-      <!-- Menú desktop -->
-      <nav class="hidden md:flex gap-6">
-        <a href="#" class="menu-item hover:text-blue-300 font-bold">Inicio</a>
-        <a href="https://tailwindcss.com/" class="menu-item hover:text-blue-300 font-bold">Tailwind</a>
-        <a href="https://github.com/miguel844/" class="menu-item hover:text-blue-300 font-bold">GitHub</a>
-        <a href="#" class="menu-item hover:text-blue-300 font-bold text-amber-300">CV</a>
-      </nav>
-
-      <!-- Botón hamburguesa -->
-      <button id="menuBtn" class="md:hidden flex flex-col gap-1">
-        <span class="w-6 h-0.5 bg-blue-50"></span>
-        <span class="w-6 h-0.5 bg-blue-50"></span>
-        <span class="w-6 h-0.5 bg-blue-50"></span>
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-black z-50">
+    <nav class="max-w-4xl mx-auto flex justify-between items-center py-2 px-4">
+      <h1 class="text-4xl font-bold text-[#ff5050] font-titulo">
+        <!-- LOGO -->
+        MACM <span class="text-white">DEV</span>
+      </h1>
+      <button class="md:hidden flex flex-col">
+        <div class="bg-[#ff5050] w-10 h-1 mb-2.5 rounded-md"></div>
+        <div class="bg-[#ff5050] w-10 h-1 mb-2.5 rounded-md"></div>
+        <div class="bg-[#ff5050] w-10 h-1 rounded-md"></div>
       </button>
-    </div>
+      <ul class="hidden md:flex gap-6 text-[#FF585C] font-bold font-texto">
 
-    <!-- Menú móvil -->
-    <nav id="mobileMenu" class="hidden flex-col md:hidden px-4 pb-2 gap-3 text-center">
-      <a href="#" class="block py-2 border-t font-bold">Inicio</a>
-      <a href="https://tailwindcss.com/" class="block py-2 border-t font-bold">Tailwind</a>
-      <a href="https://github.com/miguel844/" class="block py-2 border-t font-bold">GitHub</a>
-      <a href="#" class="block py-2 border-t font-bold  text-amber-300">CV</a>
+        <li><a href="#proyectos"
+            class="hover:text-white hover:bg-[#FF585C] px-4 py-2 rounded-md transition duration-300 ease-in-out">Proyectos</a>
+        </li>
+        <li><a href="#contacto"
+            class="hover:text-white hover:bg-[#FF585C] px-4 py-2 rounded-md transition duration-300 ease-in-out">Contacto</a>
+        </li>
+        <li><a href="#cv"
+            class="hover:text-black text-white hover:bg-[#FF585C] px-4 py-2 border-2 border-[#ff5050] rounded-md transition duration-300 ease-in-out">CV</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <section id="hero" class="flex justify-center mt-6">
-    <div>
-      <img src="./public/assets/img/mifoto.jpg" alt="Mi foto" class="w-48 h-48 rounded-full object-cover" />
+  <!-- Hero -->
+  <section class="mx-8 px-8 md:px-24 py-12 flex items-center justify-center">
+    <div class="text-center w-4xl">
+
+      <div class="mt-15 flex justify-center">
+        <img src="./public/assets/img/mini_logo_bg_white.svg" alt="">
+      </div>
+
+      <h1 class="text-5xl font-bold mt-8">
+        Miguel Angel Cabello Mesa
+      </h1>
+
+      <h2 class="text-2xl font-bold text-[#ff5050] mt-4">
+        Desarrollador Web
+      </h2>
+
+      <p class="max-w-xl mt-6 mx-auto text-shadow-lg">
+        Estudiante de DAW apasionado por Java,
+        Laravel, JavaScript y el desarrollo web.
+      </p>
+
+      <div class="flex flex-col items-center md:justify-center md:flex-row gap-4 mt-8">
+        <a href="#proyectos"
+          class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
+          Ver proyectos
+        </a>
+
+        <a href="#contacto"
+          class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
+          Contacto
+        </a>
+      </div>
+
     </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="mx-8 px-8 md:px-24 py-12 bg-black rounded-xl">
+
+    <h2 class="text-4xl font-bold font-titulo text-white">
+      Sobre mí
+    </h2>
+    <div class="bg-[#ff5050] max-w md:max-w-2/3  h-0.5 mb-8"></div>
+    
+    <p class="text-white">
+      Actualmente estoy formándome como desarrollador web.
+      Me gusta construir aplicaciones con Java, Laravel,
+      JavaScript y bases de datos relacionales.
+    </p>
+    
+  </section>
+  
+  <!-- Skills -->
+  <section id="skills" class="w-full">
+    <div class="mx-8 px-8 md:px-24 pb-2 mt-12">
+      <h2 class="text-4xl font-bold font-titulo">Skills</h2>
+    </div>
+    
+    <div class="overflow-hidden pb-12">
+      <div id="salidaSkill" class="flex gap-6 w-max bg-[#ff5050]"></div>
+    </div>
+    
+  </section>
+  
+  <!-- Proyectos -->
+  <section id="proyectos" class="mx-8 px-8 md:px-24 py-12 bg-black rounded-xl">
+    
+    <h2 class="text-4xl font-bold font-titulo text-white">
+      Proyectos
+    </h2>
+    <div class="bg-[#ff5050] max-w md:max-w-2/3 h-0.5 mb-8"></div>
+    
+    
+    
+    
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      
+      
+      
+      
+      
+      
+      <article class="bg-white rounded-xl overflow-hidden p-2">
+        
+        <img src="./public/assets/img/plantillaProyectos.png" alt="" class="w-full block h-40 rounded-t-md">
+        
+        <div class="p-4">
+
+          <h3 class="text-xl font-bold">
+            Calculadora JS
+          </h3>
+          
+          <p class="mt-3">
+            Aplicación desarrollada:
+          </p>
+          <ul class="flex gap-1">
+            <li class="estilo-html">html</li>
+            <li class="estilo-css">css</li>
+            <li class="estilo-javascript">JavaScript</li>
+          </ul>
+          
+          <a href="#" class="inline-block mt-4 text-blue-500">
+            Ver proyecto →
+          </a>
+          
+        </div>
+        
+      </article>
+      <!-- DEMAS ARTICLES HASTA 3 -->
+      
+    </div>
+
+    <div class="flex justify-end mt-4 pr-4">
+      <a href="#" class="text-[#ff5050] text-2xl font-bold flecha">Ver todos los proyectos →</a>
+    </div>
+  </section>
+  
+  <!-- Contacto -->
+  <section id="contacto" class="mx-8 px-8 md:px-24 py-12 bg-black roun rounded-t-xl mt-25">
+    
+    <div class="max-w-4xl mx-auto text-center px-6">
+      
+      <h2 class="text-4xl font-bold font-titulo text-white">
+        Contacto
+      </h2>
+      <div class="bg-[#ff5050] max-w h-0.5 mb-8"></div>
+      
+      <p class="text-slate-400">
+        Puedes encontrarme en GitHub o LinkedIn.
+      </p>
+      
+      <div class="flex justify-center gap-6 mt-8">
+        
+        <a href="#" class="bg-blue-600 px-6 py-3 rounded-lg">
+          GitHub
+        </a>
+        
+        <a href="#" class="bg-slate-700 px-6 py-3 rounded-lg">
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 </body>
-<!-- npx @tailwindcss/cli -i ./src/input.css -o ./public/assets/css/output.css --watch -->
 
 </html>

@@ -1,0 +1,41 @@
+.estilo-html{
+    background-color: orange;
+    color: white;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.estilo-css{
+    background-color: dodgerblue;
+    color: white;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.estilo-javascript{
+    background-color: yellow;
+    color: black;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.estilo-php{
+    background-color: mediumpurple;
+    color: white;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.estilo-tailwind{
+    background-color: turquoise;
+    color: black;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
