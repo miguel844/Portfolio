@@ -24,18 +24,18 @@ gsap.from(".menu-item",{
 /* https://www.youtube.com/watch?v=66rpLEBmYP4 */
 
 
-const flecha = document.querySelector(".flecha");
+const botonProyectos = document.querySelector(".btnProyectos");
 
-flecha.addEventListener("mouseenter", () => {
-    gsap.to(flecha, {
+botonProyectos.addEventListener("mouseenter", () => {
+    gsap.to(botonProyectos, {
         x: 16,
         duration: 0.3,
         color: "white"
     });
 });
 
-flecha.addEventListener("mouseleave", () => {
-    gsap.to(flecha, {
+botonProyectos.addEventListener("mouseleave", () => {
+    gsap.to(botonProyectos, {
         x: 0,
         duration: 0.3,
         color: "#ff5050"

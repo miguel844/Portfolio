@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   shape-rendering="geometricPrecision"
+   text-rendering="geometricPrecision"
+   image-rendering="optimizeQuality"
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   viewBox="0 0 512 509.64"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="linkedin-icon.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6385941"
+     inkscape:cx="106.79887"
+     inkscape:cy="246.24769"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="1432"
+     inkscape:window-y="921"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     id="rect1"
+     d="M 115.60938 0 C 51.561499 0 0 51.561499 0 115.60938 L 0 394.0293 C 0 458.07717 51.561499 509.64062 115.60938 509.64062 L 396.39062 509.64062 C 460.4385 509.64062 512 458.07717 512 394.0293 L 512 115.60938 C 512 51.561499 460.4385 0 396.39062 0 L 115.60938 0 z M 131.66016 97.369141 C 151.02014 97.369141 166.74023 113.07924 166.74023 132.44922 C 166.74023 151.8092 151.02014 167.5293 131.66016 167.5293 C 112.29018 167.5293 96.570313 151.8092 96.570312 132.44922 C 96.570312 113.07924 112.29018 97.369141 131.66016 97.369141 z M 96.570312 197.53906 L 166.74023 197.53906 L 166.74023 412.26953 L 96.570312 412.26953 L 96.570312 197.53906 z M 204.9707 197.53906 L 269.66016 197.53906 L 269.66016 230.69922 L 270.59961 230.69922 C 279.6096 214.53923 301.64027 197.53906 334.49023 197.53906 C 402.80017 197.53906 415.42969 240.04966 415.42969 295.34961 L 415.42969 412.26953 L 347.9707 412.26953 L 347.96094 308.14062 C 347.96094 284.33065 347.47082 253.68945 312.88086 253.68945 C 277.76089 253.68945 272.36914 279.60018 272.36914 306.41016 L 272.36914 412.26953 L 204.9707 412.26953 L 204.9707 197.53906 z "
+     style="fill:#ffffff" />
+</svg>
