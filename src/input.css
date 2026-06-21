@@ -6,3 +6,9 @@
     --font-titulo: "Luckiest Guy", cursive;
     --font-sans: "Roboto", sans-serif;
 }
+
+@layer components {
+    .seccion {
+        @apply max-w-5xl mx-8 md:mx-auto px-8 md:px-24 py-12 mt-8;
+    }
+}

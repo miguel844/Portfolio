@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body class="flex items-center flex-col">
 
   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
@@ -44,10 +44,10 @@
   </header>
 
   <!-- Hero -->
-  <section class="mx-8 px-8 md:px-24 py-12 flex items-center justify-center">
+  <section class="seccion flex items-center justify-center pb-0 pt-10">
     <div class="text-center w-4xl">
 
-      <div class="mt-15 flex justify-center">
+      <div class="flex justify-center">
         <img src="./public/assets/img/mini_logo_bg_white.svg" alt="">
       </div>
 
@@ -64,7 +64,7 @@
         Laravel, JavaScript y el desarrollo web.
       </p>
 
-      <div class="flex flex-col items-center md:justify-center md:flex-row gap-4 mt-8">
+      <div class="flex flex-col items-center md:justify-center md:flex-row gap-8 mt-8">
         <a href="#proyectos"
           class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
           Ver proyectos
@@ -80,57 +80,60 @@
   </section>
 
   <!-- Sobre mí -->
-  <section id="sobre-mi" class="mx-8 px-8 md:px-24 py-12 bg-black rounded-xl">
+  <section id="sobre-mi" class="seccion bg-black rounded-xl">
 
-    <h2 class="text-4xl font-bold font-titulo text-white">
-      Sobre mí
-    </h2>
-    <div class="bg-[#ff5050] max-w md:max-w-2/3  h-0.5 mb-8"></div>
-    
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl font-bold font-titulo text-white">
+        SOBRE MÍ
+      </h2>
+      <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
+    </div>
+
     <p class="text-white">
       Actualmente estoy formándome como desarrollador web.
       Me gusta construir aplicaciones con Java, Laravel,
       JavaScript y bases de datos relacionales.
     </p>
-    
+
   </section>
-  
+
   <!-- Skills -->
-  <section id="skills" class="w-full">
-    <div class="mx-8 px-8 md:px-24 pb-2 mt-8">
+  <section id="skills" class="md:max-w-5xl mt-8">
+    <div class="mx-8 px-16 pb-2 text-center">
       <h2 class="text-4xl font-bold font-titulo">Skills</h2>
     </div>
-    
-    <div class="overflow-hidden">
+
+    <div class="overflow-hidden rounded-xl">
       <div id="salidaSkill" class="flex gap-6 w-max bg-[#ff5050]"></div>
     </div>
-    
+
   </section>
-  
+
   <!-- Proyectos -->
-  <section id="proyectos" class="mx-8 px-8 md:px-24 py-12 bg-black rounded-xl mt-8">
-    
-    <h2 class="text-4xl font-bold font-titulo text-white">
-      Proyectos
-    </h2>
-    <div class="bg-[#ff5050] max-w md:max-w-2/3 h-0.5 mb-8"></div>
-    
-    
-    
-    
-    
+  <section id="proyectos" class="seccion bg-black rounded-xl">
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl font-bold font-titulo text-white">
+        Proyectos
+      </h2>
+      <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
+    </div>
+
+
+
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
       <article class="bg-white rounded-xl overflow-hidden p-2">
-        
-        <img src="./public/assets/img/calculadora-js.png" alt="" class="w-full h-40 block object-cover md:object-contain rounded-t-md">
-        
+
+        <img src="./public/assets/img/calculadora-js.png" alt=""
+          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
         <div class="p-4">
 
           <h3 class="text-xl font-bold">
@@ -141,47 +144,101 @@
             <li class="estilo-css">css</li>
             <li class="estilo-javascript">JavaScript</li>
           </ul>
-          
+
           <p class="">Una calculadora hecha con js</p>
-          <a href="https://github.com/miguel844/calculadora-js" target="_blank" class="inline-block mt-4 text-blue-500">
+          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+            class="inline-block mt-4 text-[#ff5050] font-bold">
             Ver proyecto →
           </a>
-          
+
         </div>
-        
+
       </article>
       <!-- DEMAS ARTICLES HASTA 3 -->
-      
+<article class="bg-white rounded-xl overflow-hidden p-2">
+
+        <img src="./public/assets/img/calculadora-js.png" alt=""
+          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
+        <div class="p-4">
+
+          <h3 class="text-xl font-bold">
+            Calculadora JS
+          </h3>
+          <ul class="flex gap-1">
+            <li class="estilo-html">html</li>
+            <li class="estilo-css">css</li>
+            <li class="estilo-javascript">JavaScript</li>
+          </ul>
+
+          <p class="">Una calculadora hecha con js</p>
+          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+            class="inline-block mt-4 text-[#ff5050] font-bold">
+            Ver proyecto →
+          </a>
+
+        </div>
+
+      </article>
+      <article class="bg-white rounded-xl overflow-hidden p-2">
+
+        <img src="./public/assets/img/calculadora-js.png" alt=""
+          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
+        <div class="p-4">
+
+          <h3 class="text-xl font-bold">
+            Calculadora JS
+          </h3>
+          <ul class="flex gap-1">
+            <li class="estilo-html">html</li>
+            <li class="estilo-css">css</li>
+            <li class="estilo-javascript">JavaScript</li>
+          </ul>
+
+          <p class="">Una calculadora hecha con js</p>
+          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+            class="inline-block mt-4 text-[#ff5050] font-bold">
+            Ver proyecto →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+
     </div>
 
     <div class="flex justify-end mt-4 pr-4">
       <a href="#" class="text-[#ff5050] text-2xl font-bold btnProyectos">Ver todos los proyectos →</a>
     </div>
   </section>
-  
+
 
 
 
 
   <!-- Contacto -->
-  <section id="contacto" class="mx-8 px-8 md:px-24 py-12 bg-black rounded-t-xl mt-8">
-    
+  <section id="contacto" class="seccion w-full bg-black">
+
     <div class="max-w-4xl mx-auto text-center px-6">
-      
+
       <h2 class="text-4xl font-bold font-titulo text-white">
         Contacto
       </h2>
       <div class="bg-[#ff5050] h-0.5 mb-8"></div>
-      
+
       <div class="flex justify-center gap-6 mt-8">
-        
+
         <a href="https://github.com/miguel844" target="_blank">
           <img src="public/assets/img/github-icon.svg" class="w-15" />
         </a>
         <a href="https://www.linkedin.com/in/miguel-angel-cabello-mesa-0318522b9/" target="_blank">
           <img src="public/assets/img/linkedin-icon.svg" class="w-15" />
         </a>
-        
+
 
       </div>
 

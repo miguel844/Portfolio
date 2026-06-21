@@ -20,6 +20,7 @@ function pintarSkills() {
 
 pintarSkills();
 pintarSkills();
+pintarSkills();
 
 
 let posicion = 0;
@@ -39,7 +40,7 @@ function mover() {
 
 mover();
 
-function crearProyecto(){
+function crearTarjetaProyecto(){
 
 
 }
