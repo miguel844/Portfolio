@@ -14,7 +14,7 @@
 </head>
 
 
-<body class="flex items-center flex-col">
+<body class="flex items-center flex-col bg-blue-600">
 
   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
@@ -43,211 +43,325 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="seccion flex items-center justify-center pb-0 pt-10">
-    <div class="text-center w-4xl">
 
-      <div class="flex justify-center">
-        <img src="./public/assets/img/mini_logo_bg_white.svg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Contenido -->
+  <div class="max-w-md md:max-w-5xl mx-auto px-5 bg-white">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero -->
+    <section class="w-full pt-18">
+      <div class="text-center">
+
+        <div class="flex justify-center">
+          <img src="./public/assets/img/mini_logo_bg_white.svg" alt="">
+        </div>
+
+        <h1 class="text-5xl font-bold mt-8">
+          Miguel Angel Cabello Mesa
+        </h1>
+
+        <h2 class="text-2xl font-bold text-[#ff5050] mt-4">
+          Desarrollador Web
+        </h2>
+
+        <p class="mt-6 mx-auto text-shadow-lg">
+          Estudiante de DAW apasionado por Java,
+          Laravel, JavaScript y el desarrollo web.
+        </p>
+
+        <div class="flex flex-col items-center md:justify-center md:flex-row gap-8 mt-8">
+          <a href="#proyectos"
+            class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
+            Ver proyectos
+          </a>
+
+          <a href="#contacto"
+            class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
+            Contacto
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
+
+      <div class="flex flex-col items-center">
+        <h2 class="text-4xl font-bold font-titulo text-white">
+          SOBRE MÍ
+        </h2>
+        <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
       </div>
 
-      <h1 class="text-5xl font-bold mt-8">
-        Miguel Angel Cabello Mesa
-      </h1>
-
-      <h2 class="text-2xl font-bold text-[#ff5050] mt-4">
-        Desarrollador Web
-      </h2>
-
-      <p class="max-w-xl mt-6 mx-auto text-shadow-lg">
-        Estudiante de DAW apasionado por Java,
-        Laravel, JavaScript y el desarrollo web.
+      <p class="text-white">
+        Actualmente estoy formándome como desarrollador web.
+        Me gusta construir aplicaciones con Java, Laravel,
+        JavaScript y bases de datos relacionales.
       </p>
 
-      <div class="flex flex-col items-center md:justify-center md:flex-row gap-8 mt-8">
-        <a href="#proyectos"
-          class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
-          Ver proyectos
-        </a>
+    </section>
 
-        <a href="#contacto"
-          class="px-6 py-3 rounded-lg font-bold border-2 border-[#ff5050] hover:bg-[#ff5050] hover:text-white transition duration-300 ease-in-out">
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills -->
+    <section id="skills" class="w-full py-8 mt-8">
+      <div class="mx-8 px-16 pb-2 text-center">
+        <h2 class="text-4xl font-bold font-titulo">Skills</h2>
+      </div>
+
+      <div class="overflow-hidden">
+        <div id="salidaSkill" class="flex gap-6 w-max bg-[#ff5050]"></div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
+      <div class="flex flex-col items-center">
+        <h2 class="text-4xl font-bold font-titulo text-white">
+          Proyectos
+        </h2>
+        <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
+      </div>
+
+
+
+
+
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+
+
+
+
+
+
+        <article class="bg-white rounded-xl overflow-hidden p-2">
+
+          <img src="./public/assets/img/calculadora-js.png" alt=""
+            class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
+          <div class="p-4">
+
+            <h3 class="text-xl font-bold">
+              Calculadora JS
+            </h3>
+            <ul class="flex gap-1">
+              <li class="estilo-html">html</li>
+              <li class="estilo-css">css</li>
+              <li class="estilo-javascript">JavaScript</li>
+            </ul>
+
+            <p class="">Una calculadora hecha con js</p>
+            <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+              class="inline-block mt-4 text-[#ff5050] font-bold">
+              Ver proyecto →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- DEMAS ARTICLES HASTA 3 -->
+        <article class="bg-white rounded-xl overflow-hidden p-2">
+
+          <img src="./public/assets/img/calculadora-js.png" alt=""
+            class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
+          <div class="p-4">
+
+            <h3 class="text-xl font-bold">
+              Calculadora JS
+            </h3>
+            <ul class="flex gap-1">
+              <li class="estilo-html">html</li>
+              <li class="estilo-css">css</li>
+              <li class="estilo-javascript">JavaScript</li>
+            </ul>
+
+            <p class="">Una calculadora hecha con js</p>
+            <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+              class="inline-block mt-4 text-[#ff5050] font-bold">
+              Ver proyecto →
+            </a>
+
+          </div>
+
+        </article>
+        <article class="bg-white rounded-xl overflow-hidden p-2">
+
+          <img src="./public/assets/img/calculadora-js.png" alt=""
+            class="w-full h-40 block object-cover md:object-contain rounded-t-md">
+
+          <div class="p-4">
+
+            <h3 class="text-xl font-bold">
+              Calculadora JS
+            </h3>
+            <ul class="flex gap-1">
+              <li class="estilo-html">html</li>
+              <li class="estilo-css">css</li>
+              <li class="estilo-javascript">JavaScript</li>
+            </ul>
+
+            <p class="">Una calculadora hecha con js</p>
+            <a href="https://github.com/miguel844/calculadora-js" target="_blank"
+              class="inline-block mt-4 text-[#ff5050] font-bold">
+              Ver proyecto →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="flex justify-end mt-4 pr-4">
+        <a href="#" class="text-[#ff5050] text-2xl font-bold btnProyectos">Ver todos los proyectos →</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contacto -->
+    <footer id="contacto" class="w-full p-8 md:px-12 bg-black rounded-t-xl mt-8">
+
+      <div class="text-center">
+
+        <h2 class="text-4xl font-bold font-titulo text-white">
           Contacto
-        </a>
-      </div>
+        </h2>
+        <div class="bg-[#ff5050] h-0.5 mb-8"></div>
 
-    </div>
-  </section>
+        <div class="flex justify-center gap-6 mt-8">
 
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="seccion bg-black rounded-xl">
-
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl font-bold font-titulo text-white">
-        SOBRE MÍ
-      </h2>
-      <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
-    </div>
-
-    <p class="text-white">
-      Actualmente estoy formándome como desarrollador web.
-      Me gusta construir aplicaciones con Java, Laravel,
-      JavaScript y bases de datos relacionales.
-    </p>
-
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="md:max-w-5xl mt-8">
-    <div class="mx-8 px-16 pb-2 text-center">
-      <h2 class="text-4xl font-bold font-titulo">Skills</h2>
-    </div>
-
-    <div class="overflow-hidden rounded-xl">
-      <div id="salidaSkill" class="flex gap-6 w-max bg-[#ff5050]"></div>
-    </div>
-
-  </section>
-
-  <!-- Proyectos -->
-  <section id="proyectos" class="seccion bg-black rounded-xl">
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl font-bold font-titulo text-white">
-        Proyectos
-      </h2>
-      <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
-    </div>
-
-
-
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-
-
-
-
-
-
-      <article class="bg-white rounded-xl overflow-hidden p-2">
-
-        <img src="./public/assets/img/calculadora-js.png" alt=""
-          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
-
-        <div class="p-4">
-
-          <h3 class="text-xl font-bold">
-            Calculadora JS
-          </h3>
-          <ul class="flex gap-1">
-            <li class="estilo-html">html</li>
-            <li class="estilo-css">css</li>
-            <li class="estilo-javascript">JavaScript</li>
-          </ul>
-
-          <p class="">Una calculadora hecha con js</p>
-          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
-            class="inline-block mt-4 text-[#ff5050] font-bold">
-            Ver proyecto →
+          <a href="https://github.com/miguel844" target="_blank">
+            <img src="public/assets/img/github-icon.svg" class="w-15" />
+          </a>
+          <a href="https://www.linkedin.com/in/miguel-angel-cabello-mesa-0318522b9/" target="_blank">
+            <img src="public/assets/img/linkedin-icon.svg" class="w-15" />
           </a>
 
-        </div>
-
-      </article>
-      <!-- DEMAS ARTICLES HASTA 3 -->
-<article class="bg-white rounded-xl overflow-hidden p-2">
-
-        <img src="./public/assets/img/calculadora-js.png" alt=""
-          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
-
-        <div class="p-4">
-
-          <h3 class="text-xl font-bold">
-            Calculadora JS
-          </h3>
-          <ul class="flex gap-1">
-            <li class="estilo-html">html</li>
-            <li class="estilo-css">css</li>
-            <li class="estilo-javascript">JavaScript</li>
-          </ul>
-
-          <p class="">Una calculadora hecha con js</p>
-          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
-            class="inline-block mt-4 text-[#ff5050] font-bold">
-            Ver proyecto →
-          </a>
 
         </div>
-
-      </article>
-      <article class="bg-white rounded-xl overflow-hidden p-2">
-
-        <img src="./public/assets/img/calculadora-js.png" alt=""
-          class="w-full h-40 block object-cover md:object-contain rounded-t-md">
-
-        <div class="p-4">
-
-          <h3 class="text-xl font-bold">
-            Calculadora JS
-          </h3>
-          <ul class="flex gap-1">
-            <li class="estilo-html">html</li>
-            <li class="estilo-css">css</li>
-            <li class="estilo-javascript">JavaScript</li>
-          </ul>
-
-          <p class="">Una calculadora hecha con js</p>
-          <a href="https://github.com/miguel844/calculadora-js" target="_blank"
-            class="inline-block mt-4 text-[#ff5050] font-bold">
-            Ver proyecto →
-          </a>
-
-        </div>
-
-      </article>
-
-
-
-
-    </div>
-
-    <div class="flex justify-end mt-4 pr-4">
-      <a href="#" class="text-[#ff5050] text-2xl font-bold btnProyectos">Ver todos los proyectos →</a>
-    </div>
-  </section>
-
-
-
-
-
-  <!-- Contacto -->
-  <section id="contacto" class="seccion w-full bg-black">
-
-    <div class="max-w-4xl mx-auto text-center px-6">
-
-      <h2 class="text-4xl font-bold font-titulo text-white">
-        Contacto
-      </h2>
-      <div class="bg-[#ff5050] h-0.5 mb-8"></div>
-
-      <div class="flex justify-center gap-6 mt-8">
-
-        <a href="https://github.com/miguel844" target="_blank">
-          <img src="public/assets/img/github-icon.svg" class="w-15" />
-        </a>
-        <a href="https://www.linkedin.com/in/miguel-angel-cabello-mesa-0318522b9/" target="_blank">
-          <img src="public/assets/img/linkedin-icon.svg" class="w-15" />
-        </a>
-
 
       </div>
 
-    </div>
+    </footer>
 
-  </section>
-
-
-
+    <!-- Fin contenido -->
+  </div>
 </body>
 
 </html>

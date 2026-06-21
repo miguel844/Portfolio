@@ -8,7 +8,7 @@
 }
 
 @layer components {
-    .seccion {
+    /* .seccion {
         @apply max-w-5xl mx-8 md:mx-auto px-8 md:px-24 py-12 mt-8;
-    }
+    } */
 }
