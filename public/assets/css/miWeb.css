@@ -39,3 +39,11 @@
     font-weight: bold;
     border-radius: 3px;
 }
+.estilo-laravel{
+    background-color: red;
+    color: white;
+    padding: 0 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
