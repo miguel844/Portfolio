@@ -335,12 +335,27 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-x-2 {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 2px;
+  }
+  .border-x-3 {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 3px;
+  }
+  .border-x-4 {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 4px;
+  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
   .border-\[\#ff5050\] {
     border-color: #ff5050;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .border-white {
     border-color: var(--color-white);
