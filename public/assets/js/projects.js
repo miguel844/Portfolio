@@ -4,8 +4,7 @@ const proyectos = [
     descripcion: "Aplicación desarrollada con JavaScript para realizar operaciones matemáticas.",
     imagen: "/public/assets/img/calculadora-js.png",
     tecnologias: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/usuario/calculadora",
-    demo: "https://demo-calculadora.com",
+    github: "https://github.com/miguel844/calculadora-js",
     mostrarPaginaPrincipal: true
   },
   {
