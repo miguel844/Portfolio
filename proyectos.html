@@ -16,55 +16,55 @@
 
 <body class="flex items-center flex-col">
 
-  <!-- Navbar -->
+   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
     <nav class="max-w-4xl mx-auto flex justify-between items-center py-2 px-4">
+      <!-- LOGO -->
       <h1 class="text-4xl font-bold text-[#ff5050] font-titulo md:hover:scale-105 md:transition">
-        <!-- LOGO -->
-        <a href="index.html">MACM <span class="text-white">DEV</span></a>
+        <a href="index.html">MACM <span class="text-white ">DEV</span></a>
       </h1>
-      <button class="md:hidden flex flex-col">
-        <div class="bg-[#ff5050] w-10 h-1 mb-2.5 rounded-md"></div>
-        <div class="bg-[#ff5050] w-10 h-1 mb-2.5 rounded-md"></div>
-        <div class="bg-[#ff5050] w-10 h-1 rounded-md"></div>
-      </button>
-      <ul class="hidden md:flex gap-6 text-[#FF585C] font-bold font-texto">
 
-        <li><a href="#proyectos"
-            class="hover:text-white hover:bg-[#FF585C] px-4 py-2 rounded-md transition duration-300 ease-in-out">Proyectos</a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-2">
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+      </button>
+
+      <!-- MENÚ -->
+      <ul id="menu" class="fixed top-14.25 right-0 w-3/5 bg-black/85 text-[#FF585C] backdrop-blur-sm
+           flex flex-col gap-6 p-6 transform translate-x-full
+           transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:w-auto md:h-auto">
+
+        <li>
+          <a href="#proyectos"
+            class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+            Proyectos
+          </a>
         </li>
-        <li><a href="#contacto"
-            class="hover:text-white hover:bg-[#FF585C] px-4 py-2 rounded-md transition duration-300 ease-in-out">Contacto</a>
+
+        <li>
+          <a href="#contacto"
+            class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+            Contacto
+          </a>
         </li>
-        <li><a href="#cv"
-            class="hover:text-black text-white hover:bg-[#FF585C] px-4 py-2 border-2 border-[#ff5050] rounded-md transition duration-300 ease-in-out">CV</a>
+
+        <li>
+          <a href="#cv"
+            class="text-2xl bg-[#ff5050] text-white md:text-white md:bg-transparent md:hover:bg-[#ff5050] md:hover:text-white px-4 py-2 border-2 border-[#ff5050] rounded-md transition font-bold">
+            CV
+          </a>
         </li>
+
       </ul>
+
     </nav>
   </header>
 
-
-
-
-
-
-
-
-
-  
   <!-- Contenido -->
   <div class="w-full max-w-5xl mx-auto px-5 pt-14.25">
-
-
-
-
-
-
-
-
-
-
-
+    
     <!-- Proyectos -->
     <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
       <div class="flex flex-col items-center">
@@ -74,43 +74,7 @@
         <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
       </div>
       <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Contacto -->
     <footer id="contacto" class="w-full p-8 md:px-12 bg-black rounded-t-xl mt-8">
