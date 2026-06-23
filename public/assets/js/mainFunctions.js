@@ -21,6 +21,8 @@ function pintarSkills() {
 pintarSkills();
 pintarSkills();
 pintarSkills();
+pintarSkills();
+pintarSkills();
 
 
 let posicion = 0;
