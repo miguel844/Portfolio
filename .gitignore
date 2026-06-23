@@ -6,7 +6,7 @@ node_modules/
 
 # Archivos varios
 # Carpeta fuentes
-public/assets/fonts
+assets/fonts
 
 # Build / dist (por si lo usas en el futuro)
 dist/
