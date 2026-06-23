@@ -10,7 +10,7 @@ const proyectos = [
   {
     titulo: "Lista de Tareas",
     descripcion: "Aplicación para gestionar tareas pendientes.",
-    imagen: "/public/assets/img/todo.png",
+    imagen: "todo.png",
     tecnologias: ["HTML", "Tailwind", "JavaScript"],
     github: "https://github.com/usuario/todo",
     demo: "https://demo-todo.com",
@@ -19,7 +19,7 @@ const proyectos = [
   {
     titulo: "Portfolio",
     descripcion: "Portfolio personal responsive desarrollado con Tailwind.  lorem asdasda sdasdasd asdasd asdasdasd asdasd asdasc xasdas d asdasd",
-    imagen: "/public/assets/img/portfolio.png",
+    imagen: "/portfolio/public/assets/img/portfolio.png",
     tecnologias: ["HTML", "Tailwind", "GSAP"],
     github: "https://github.com/usuario/portfolio",
     demo: "https://demo-portfolio.com",
