@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="assets/css/miWeb.css">
   <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
-  <script src="assets/js/projects.js" defer></script>
-  <script src="assets/js/projectsFuntions.js" defer></script>
+  <script src="assets/js/botones.js" defer></script>
+
 </head>
 
 
@@ -37,13 +37,13 @@
            transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:w-auto md:h-auto">
 
         <li>
-          <a class="active select-none text-2xl text-white bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+          <a href="proyectos.html" class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
             Proyectos
           </a>
         </li>
 
         <li>
-          <a href="contacto.html" class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+          <a class="active select-none text-2xl text-white bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
             Contacto
           </a>
         </li>
@@ -62,17 +62,7 @@
   <!-- Contenido -->
   <div class="w-full max-w-5xl mx-auto px-5 pt-14.25">
     
-    <!-- Proyectos -->
-    <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
-      <div class="flex flex-col items-center">
-        <h2 class="text-4xl font-bold font-titulo text-white">
-          Proyectos
-        </h2>
-        <div class="bg-[#ff5050] w-full h-0.5 mb-8"></div>
-      </div>
-      <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
-    </section>
-
+    
     <!-- Contacto -->
     <footer id="contacto" class="w-full p-8 md:px-12 bg-black rounded-t-xl mt-8">
 
