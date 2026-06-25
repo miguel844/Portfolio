@@ -7,6 +7,9 @@ node_modules/
 # Archivos varios
 # Carpeta fuentes
 assets/fonts
+# CV
+# assets/cv/Miguel_Angel_Cabello_Mesa_CV.docx
+
 
 # Build / dist (por si lo usas en el futuro)
 dist/
