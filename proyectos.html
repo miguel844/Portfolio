@@ -7,64 +7,23 @@
   <title>MACM DEV</title>
   <link rel="stylesheet" href="assets/css/output.css">
   <link rel="stylesheet" href="assets/css/miWeb.css">
-  <!-- GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+
   <script src="assets/js/projects.js" defer></script>
   <script src="assets/js/projectsFuntions.js" defer></script>
   <script src="assets/js/botones.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
 </head>
 
 
 <body class="min-h-screen flex flex-col">
   <!-- Navbar -->
-  <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
-    <nav class="max-w-4xl mx-auto flex justify-between items-center h-12 px-4">
-      <!-- LOGO -->
-      <h1 class="text-5xl m-0 font-bold text-[#ff5050] font-titulo md:hover:scale-105 md:transition">
-        <a href="index.html">MACM<span class="text-white"> DEV</span></a>
-      </h1>
-
-      <!-- BOTÓN HAMBURGUESA -->
-      <button id="menu-btn" class="md:hidden flex flex-col gap-2">
-        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
-        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
-        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
-      </button>
-      <!-- MENÚ -->
-      <ul id="menu" class="fixed top-12.25 right-0 w-3/5 bg-black/85 md:bg-transparent text-[#FF585C] backdrop-blur-sm
-           flex flex-col gap-6 transform translate-x-full p-4 md:p-0
-           transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:w-auto md:h-auto">
-
-        <li>
-          <a class="active select-none text-xl text-white bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
-            Proyectos
-          </a>
-        </li>
-
-        <li>
-          <a href="contacto.html"
-            class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
-            Contacto
-          </a>
-        </li>
-
-        <li>
-          <a href="assets/cv/Miguel_Angel_Cabello_Mesa_CV.docx"
-            class="text-xl text-white bg-[#ff5050] md:text-white md:bg-transparent md:hover:bg-[#ff5050] md:hover:text-white px-3 py-1.5 border-2 border-[#ff5050] rounded-md font-bold md:transition">
-            CV
-          </a>
-        </li>
-
-      </ul>
-
-    </nav>
-  </header>
+  <div id="navbar-container"></div>
 
   <!-- Contenido -->
-  <div class="w-full max-w-5xl mx-auto px-5 pt-14.25 flex flex-col grow">
+  <div class="w-full max-w-5xl mx-auto px-5 pt-12 flex flex-col grow">
 
     <!-- Proyectos -->
-    <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8 mb-8">
+    <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
       <div class="flex flex-col items-center">
         <h2 class="text-4xl font-bold font-titulo text-white">
           Proyectos
@@ -74,13 +33,11 @@
       <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black w-full mt-auto text-white flex flex-col items-center rounded-t-xl">
-      <p class="p-2 text-xs">Copyright &reg; 2026 MACM DEV</p>
-    </footer>
 
     <!-- Fin contenido -->
   </div>
+  <!-- Footer -->
+  <div id="footer-container"></div>
 </body>
 
 </html>

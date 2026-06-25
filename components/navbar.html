@@ -1,0 +1,50 @@
+<!-- Navbar -->
+  <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
+    <nav class="max-w-4xl mx-auto flex justify-between items-center h-12 px-4">
+      <!-- LOGO -->
+      <h1 class="text-5xl m-0 font-bold text-[#ff5050] font-titulo select-none">
+        <a href="index.html">MACM<span class="text-white"> DEV</span></a>
+      </h1>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-2">
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+        <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
+      </button>
+      <!-- MENÚ -->
+      <ul id="menu" class="fixed top-12.25 right-0 w-3/5 bg-black/85 md:bg-transparent text-[#FF585C] backdrop-blur-sm
+           flex flex-col gap-6 transform translate-x-full p-4 md:p-0
+           transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:w-auto md:h-auto">
+
+        <li>
+          <a href="index.html" data-page="home"
+            class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="proyectos.html" data-page="proyectos"
+            class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
+            Proyectos
+          </a>
+        </li>
+
+        <li>
+          <a href="contacto.html" data-page="contacto"
+            class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
+            Contacto
+          </a>
+        </li>
+
+        <li>
+          <a href="assets/cv/Miguel_Angel_Cabello_Mesa_CV.docx"
+            class="text-xl text-white bg-[#ff5050] md:text-white md:bg-transparent md:hover:bg-[#ff5050] md:hover:text-white px-3 py-1.5 border-2 border-[#ff5050] rounded-md font-bold md:transition">
+            CV
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </header>

@@ -8,7 +8,7 @@ function crearTarjetas(listaProyectos) {
             const card = document.createElement("article");
             console.log(proyecto);
             card.className =
-                "bg-white rounded-xl overflow-hidden shadow-lg hover:scale-105 transition p-2 flex flex-col h-full";
+                "bg-white rounded-xl overflow-hidden shadow-lg md:hover:scale-105 md:transition p-2 flex flex-col h-full";
 
             card.innerHTML = `
                 <img
