@@ -20,7 +20,7 @@ const proyectos = [
     titulo: "Portfolio",
     descripcion: "Portfolio personal responsive desarrollado con Tailwind.  lorem asdasda sdasdasd asdasd asdasdasd asdasd asdasc xasdas d asdasd",
     imagen: "/portfolio/public/assets/img/portfolio.png",
-    tecnologias: ["HTML", "Tailwind", "GSAP"],
+    tecnologias: ["HTML", "Tailwind", "JavaScript"],
     github: "https://github.com/usuario/portfolio",
     demo: "https://demo-portfolio.com",
     mostrarPaginaPrincipal: false

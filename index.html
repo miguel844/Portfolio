@@ -16,13 +16,13 @@
 </head>
 
 
-<body class="flex items-center flex-col">
+<body class="min-h-screen flex flex-col">
   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-black z-50 border-b border-white">
-    <nav class="max-w-4xl mx-auto flex justify-between items-center py-2 px-4">
+    <nav class="max-w-4xl h-12 mx-auto flex justify-between items-center py-2 px-4">
       <!-- LOGO -->
       <h1 class="text-4xl font-bold text-[#ff5050] font-titulo md:hover:scale-105 md:transition">
-        <a href="index.html">MACM <span class="text-white ">DEV</span></a>
+        <a href="index.html">MACM<span class="text-white"> DEV</span></a>
       </h1>
 
       <!-- BOTÓN HAMBURGUESA -->
@@ -31,26 +31,25 @@
         <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
         <span class="bar w-10 h-1 bg-[#ff5050] rounded transition-all duration-300"></span>
       </button>
-
       <!-- MENÚ -->
-      <ul id="menu" class="fixed top-14.25 right-0 w-3/5 bg-black/85 text-[#FF585C] backdrop-blur-sm
-           flex flex-col gap-6 transform translate-x-full p-4
+      <ul id="menu" class="fixed top-12.25 right-0 w-3/5 bg-black/85 md:bg-transparent text-[#FF585C] backdrop-blur-sm
+           flex flex-col gap-6 transform translate-x-full p-4 md:p-0
            transition-transform duration-300 md:static md:translate-x-0 md:flex md:flex-row md:w-auto md:h-auto">
 
         <li>
-          <a href="proyectos.html" class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+          <a href="proyectos.html" class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
             Proyectos
           </a>
         </li>
 
         <li>
-          <a href="contacto.html" class="text-2xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-2 rounded-md transition font-bold">
+          <a href="contacto.html" class="text-xl md:hover:text-white md:hover:bg-[#FF585C] px-4 py-1 rounded-md font-bold md:transition">
             Contacto
           </a>
         </li>
 
         <li>
-          <a href="#cv" class="text-2xl  text-white md:text-white md:bg-transparent md:hover:bg-[#ff5050] md:hover:text-white px-4 py-2 border-2 border-[#ff5050] rounded-md transition font-bold">
+          <a href="#cv" class="text-xl text-white bg-[#ff5050] md:text-white md:bg-transparent md:hover:bg-[#ff5050] md:hover:text-white px-3 py-1.5 border-2 border-[#ff5050] rounded-md font-bold md:transition">
             CV
           </a>
         </li>
@@ -61,7 +60,7 @@
   </header>
 
   <!-- Contenido -->
-  <div class="w-full max-w-5xl mx-auto px-5 pt-14.25">
+  <div class="w-full max-w-5xl mx-auto px-5 pt-14.25 flex flex-col grow">
     <!-- Hero -->
     <section class="w-full mt-8">
       <div class="text-center">
@@ -165,12 +164,12 @@
       </div>
 
       <div class="flex justify-end mt-4 pr-4">
-        <a href="proyectos.html" class="text-[#ff5050] text-2xl font-bold btnProyectos">Más proyectos →</a>
+        <a href="proyectos.html" class="text-[#ff5050] text-2xl font-bold md:transition md:duration-300 md:hover:-translate-x-4 md:hover:text-white">Más proyectos →</a>
       </div>
     </section>
 
     <!-- Contacto -->
-    <footer id="contacto" class="w-full p-8 md:px-12 bg-black rounded-t-xl mt-8">
+    <div id="contacto" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8 mb-8">
 
       <div class="text-center">
 
@@ -192,8 +191,12 @@
 
       </div>
 
-    </footer>
+    </div>
 
+    <!-- Footer -->
+    <footer class="bg-black w-full mt-auto text-white flex flex-col items-center rounded-t-xl">
+      <p class="p-2 text-xs">Copyright &reg; 2026 MACM DEV</p>
+    </footer>
     <!-- Fin contenido -->
   </div>
 </body>
