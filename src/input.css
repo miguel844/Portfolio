@@ -5,6 +5,8 @@
 @theme {
     --font-titulo: "Luckiest Guy", cursive;
     --font-sans: "Roboto", sans-serif;
+
+    --color-primary: #ff5050;
 }
 
 @layer components {
