@@ -50,7 +50,7 @@ function crear3Tarjetas(listaProyectos) {
         
         if (proyecto.mostrarPaginaPrincipal){
             const card = document.createElement("article");
-            console.log(proyecto);
+            //console.log(proyecto);
             card.className =
                 "bg-white rounded-xl overflow-hidden shadow-lg md:hover:scale-105 md:transition p-2 flex flex-col h-full";
 

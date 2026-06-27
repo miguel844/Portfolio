@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
     --font-titulo: "Luckiest Guy", cursive;
     --font-sans: "Roboto", sans-serif;
+    --font-pixel: "Pixelify Sans", sans-serif;
 
     --color-primary: #ff5050;
 }
