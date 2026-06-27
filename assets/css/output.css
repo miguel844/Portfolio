@@ -508,6 +508,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
   }
