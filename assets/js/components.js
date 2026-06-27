@@ -6,6 +6,29 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 });
 
+function initNavbar() {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    const bars = document.querySelectorAll(".bar");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("translate-x-full");
+
+        bars[0].classList.toggle("rotate-45");
+        bars[0].classList.toggle("translate-y-3.5");
+        bars[0].classList.toggle("h-2");
+
+        bars[1].classList.toggle("opacity-0");
+
+        bars[2].classList.toggle("-rotate-45");
+        bars[2].classList.toggle("-translate-y-3.5");
+        bars[2].classList.toggle("h-2");
+    });
+}
+
+
 async function loadNavbar() {
   const header = document.getElementById("navbar-container");
   if (!header) return;
@@ -24,12 +47,14 @@ async function loadNavbar() {
   }
 }
 
-async function loadFooter() {
-  const footer = document.getElementById("footer-container");
-  if (!footer) return;
+async function loadNavbar() {
+    const header = document.getElementById("navbar-container");
+    if (!header) return;
 
-  const res = await fetch("components/footer.html");
-  footer.innerHTML = await res.text();
+    const res = await fetch("components/navbar.html");
+    header.innerHTML = await res.text();
+
+    initNavbar();
 }
 
 
