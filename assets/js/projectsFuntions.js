@@ -40,7 +40,7 @@ function crearTarjetas(listaProyectos) {
                     <a
                     href="${proyecto.github}"
                     target="_blank"
-                    class="inline-block mt-auto text-[#ff5050] font-bold"
+                    class="inline-block mt-auto text-primary font-bold"
                     >
                     Ver proyecto →
                     </a>
