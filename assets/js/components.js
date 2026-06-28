@@ -60,8 +60,7 @@ async function loadFooter() {
 function setActiveLink() {
   const pageMap = {
     "index.html": "home",
-    "proyectos.html": "proyectos",
-    "contacto.html": "contacto"
+    "proyectos.html": "proyectos"
   };
 
   const current = Object.keys(pageMap).find(page =>
