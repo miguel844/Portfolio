@@ -1,7 +1,7 @@
 const pancarta = document.getElementById("pancarta");
-const texto = `HOLA MI NOMBRE ES
-MIGUEL Y SOY
-PROGRAMADOR WEB`;
+const texto =  `BIENVENIDO A MI
+PORTFOLIO COMO
+DESARROLLADOR`;
 
 function typewriterEffect(elemento, texto, i = 0) {
     elemento.innerHTML += texto[i];

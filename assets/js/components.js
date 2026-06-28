@@ -47,14 +47,13 @@ async function loadNavbar() {
   }
 }
 
-async function loadNavbar() {
-    const header = document.getElementById("navbar-container");
-    if (!header) return;
+async function loadFooter() {
+    const footer = document.getElementById("footer-container");
+    if (!footer) return;
 
-    const res = await fetch("components/navbar.html");
-    header.innerHTML = await res.text();
+    const res = await fetch("components/footer.html");
+    footer.innerHTML = await res.text();
 
-    initNavbar();
 }
 
 

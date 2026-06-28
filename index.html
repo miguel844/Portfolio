@@ -13,7 +13,6 @@
   <script src="assets/js/mainFunctions.js" defer></script>
   <script src="assets/js/pancarta.js" defer></script>
   <script src="assets/js/components.js" defer></script>
-  <!-- <script src="assets/js/botones.js" defer></script> -->
 </head>
 
 
@@ -31,7 +30,7 @@
           <div>
             <!-- Div pancarta imagen -->
             <div
-              class="relative top-57 left-17 w-28.5 h-14.5 overflow-hidden text-primary text-xs text-center py-1.75 font-pixel whitespace-pre-line"
+              class="select-none relative top-57 left-17 w-28.5 h-14.5 overflow-hidden text-primary text-xs text-center py-1.75 font-pixel whitespace-pre-line"
               id="pancarta"></div>
             <img src="assets/img/logo_pixel.svg" alt="" class="w-50">
           </div>
@@ -95,7 +94,7 @@
     <!-- Skills -->
     <section id="skills" class="w-full mt-8">
       <div class="flex flex-col items-center">
-        <h2 class="text-4xl font-bold font-titulo">Skills</h2>
+        <h2 class="text-4xl font-bold font-titulo">SKILLS</h2>
       </div>
 
       <div class="overflow-hidden">
@@ -108,7 +107,7 @@
     <section id="proyectos" class="w-full p-8 md:px-12 bg-black rounded-xl mt-8">
       <div class="flex flex-col items-center">
         <h2 class="text-4xl font-bold font-titulo text-white">
-          Proyectos
+          PROYECTOS
         </h2>
         <div class="bg-primary w-full h-0.5 mb-8 mt-1"></div>
       </div>
@@ -155,26 +154,95 @@
       <div class="text-center">
 
         <h2 class="text-4xl font-bold font-titulo text-white">
-          Contacto
+          CONTACTO
         </h2>
         <div class="bg-primary h-0.5 mb-8 mt-1"></div>
 
-        <div class="flex justify-center gap-6 mt-8">
 
-          <a href="https://github.com/miguel844" target="_blank">
-            <img src="assets/img/github-icon.svg" class="w-15 md:hover:scale-105 md:transition" />
-          </a>
-          <a href="https://www.linkedin.com/in/miguel-angel-cabello-mesa-0318522b9/" target="_blank">
-            <img src="assets/img/linkedin-icon.svg" class="w-15 md:hover:scale-105 md:transition" />
-          </a>
 
+        <!-- Formulario -->
+        <div class="flex justify-center mt-8 px-4">
+          <form action="https://formsubmit.co/miguel844@gmail.com" method="POST"
+            class="w-full max-w-xl bg-white rounded-2xl p-8 space-y-6">
+
+            <!-- Nombre -->
+            <div class="flex flex-col">
+              <label for="name" class="font-bold mb-2">
+                NOMBRE
+              </label>
+              <input id="name" type="text" name="name" required placeholder="Tu nombre" class="border rounded-lg px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-black/50
+                       transition duration-300 ease-in-out">
+            </div>
+
+            <!-- Email -->
+            <div class="flex flex-col">
+              <label for="email" class="font-bold mb-2">
+                Email
+              </label>
+              <input id="email" type="email" name="email" required placeholder="tu@email.com" class="border rounded-lg px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-black/50
+                       transition duration-300 ease-in-out">
+            </div>
+
+            <!-- Mensaje -->
+            <div class="flex flex-col">
+              <label for="message" class="font-bold mb-2">
+                Mensaje
+              </label>
+              <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje..." class="border rounded-lg px-4 py-3
+                       focus:outline-none focus:ring-2 focus:ring-black/50
+                       transition duration-300 ease-in-out">
+            </textarea>
+            <input type="hidden" name="_template" value="basic">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://miguel844.github.io/Portfolio/">
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="px-6 py-3 rounded-lg font-bold border-2 
+             border-primary bg-primary text-white md:text-black md:bg-white md:hover:bg-primary md:hover:text-white
+            cursor-pointer transition duration-300 ease-in-out">
+              Enviar mensaje
+            </button>
+
+          </form>
         </div>
+
 
       </div>
 
+
+
+
     </div>
 
-    <!-- Fin contenido -->
+  
+
+  <!-- RRSS -->
+    <section id="proyectos" class="w-full md:px-12 mt-8">
+      <div class="flex flex-col items-center">
+        <h2 class="text-4xl font-bold font-titulo">
+          REDES SOCIALES
+        </h2>
+        <div class="bg-primary w-2/3 h-0.5 mb-8 mt-1"></div>
+      </div>
+
+
+    <div class="flex justify-center gap-6">
+
+      <a href="https://github.com/miguel844" target="_blank">
+        <img src="assets/img/github-icon-black.svg" class="w-15 md:hover:scale-105 md:transition" />
+      </a>
+      <a href="https://www.linkedin.com/in/miguel-angel-cabello-mesa-0318522b9/" target="_blank">
+        <img src="assets/img/linkedin-icon-black.svg" class="w-15 md:hover:scale-105 md:transition" />
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Fin contenido -->
   </div>
   <!-- Footer -->
   <div id="footer-container"></div>
